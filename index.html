@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="../CSS/login.css">
+   <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-analytics.js"></script>
+</head>
+<body>
+    <img src="../images/paper.gif">
+    <div class="form-box">
+        <div class="tag">
+        <h1>Login here</h1>
+        <input type="email" placeholder="MAILID" id="mail" >
+        <input type="textarea" placeholder="DDMMYYYY"id="dob" >
+        <div class="but">
+           <!-- <a href="categories.html"> -->
+            <button class="button" onclick="verifyLogin()">Submit</button>
+        <!-- </a> -->
+      </div></div>
+        <img class="img2" src="../images/back.png">
+        <img class="img3" src="../images/bg.png">
+    </div>
+    <script type="text/javascript">
+
+      function verifyLogin(){
+        var mail=document.getElementById('mail').value;
+        var dob=document.getElementById('dob').value;
+        if(mail=="18it29@kcgcollege.com" && dob=="10102000"){
+          window.location="category.html";
+        }
+        else{
+          window.alert("enter correct credential!")
+        }
+      }
+
+    </script> </body>
+</html>
